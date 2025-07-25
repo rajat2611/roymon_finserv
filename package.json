@@ -1,0 +1,11 @@
+{
+  "name": "roymon-finserv",
+  "version": "1.0.0",
+  "description": "Static website for Royal Monarch Finserv",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
