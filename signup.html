@@ -109,14 +109,14 @@
 
     <h3 class="tricolor-gradiant ">Enter your valid data</h3>
 
-    <form id="userForm">
+    <form action="https://formspree.io/f/xanboejd" method="POST" id="userForm" onsubmit="return handleSubmit(event)">
       <div class="form-group">
         <input type="text" name="firstName" placeholder="First Name" required />
         <input type="text" name="lastName" placeholder="Last Name" required />
       </div>
 
       <div class="form-group">
-        <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" required />
+        <input id="phone" type="tel" name="phone" placeholder="Phone number" required />
       </div>
       <script>
   const input = document.querySelector("#phone");
@@ -139,30 +139,33 @@
         <label><input type="radio" name="gender" value="Other" /> Other</label>
       </div>
 
-      <button type="submit" class="submit-btn" onclick="window.location.href='index.html'">Submit</button>
+      <button type="submit" class="submit-btn">Submit</button>
     </form>
+    <p id="thank-you-msg" style="display:none; color: green; margin-top: 15px;">
+  ✅ Thank you for contacting us! We’ll get back to you shortly.
+</p>
   </div>
-  <script>
-    document.getElementById('userForm').addEventListener('submit', function(e) {
-      e.preventDefault();
 
-      const form = e.target;
-      const data = `
-      Name: ${form.firstName.value} ${form.lastName.value}
-      Phone: ${form.phone.value}
-      Email: ${form.email.value}
-      Gender: ${form.gender.value}
-      -----------------------------`;
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById("userForm");
+    const msg = document.getElementById("thank-you-msg");
 
-      const blob = new Blob([data], { type: 'text/plain' });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.download = 'user-data.txt';
-      link.href = url;
-      link.click();
-      URL.revokeObjectURL(url);
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(res => {
+      if (res.ok) {
+        form.reset();
+        msg.style.display = "block";
+      } else {
+        alert("Oops! Something went wrong.");
+      }
     });
-  </script>
+  }
+</script>
   
 
 </body>
