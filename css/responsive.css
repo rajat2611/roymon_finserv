@@ -1,0 +1,452 @@
+@media only screen and (max-width: 1400px) {
+  .border-effect {
+    padding: 16px;
+}
+  .firstH11,
+  .secondH11,
+  .thirdH11 {
+    font-size: 80px;
+  }
+
+  .secure {
+    height: 620px;
+  }
+  .content2{
+    font-size: 20px;
+  }
+  h2.small-title {
+    font-size: 27px;
+}
+.circle-arrow{
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+}
+.become-a-partner-icon-h{
+  height: 100px;
+}
+.process-content-step-four,
+.process-content-step-five,
+.process-content-step-six{
+  margin-left: auto;
+}
+}
+@media only screen and (max-width: 1200px) {
+  .padding-top-bottom {
+    padding: 110px 0;
+  }
+
+  .secondH1,
+  .thirdH1,
+  .firstH1 {
+    font-size: 55px;
+  }
+
+  .h2home {
+    font-size: 44px;
+  }
+
+  .gradiant_btn,
+  .get_start_btn {
+    font-size: 18px;
+    height: 55px;
+    background-size: contain !important;
+  }
+
+  .header-logo {
+    width: 100px;
+  }
+
+  .firstH11, .secondH11, .thirdH11 {
+    font-size: 55px;
+  }
+
+  .secure {
+    height: 534px;
+  }
+  .custom-font-add {
+    font-size: 23px;
+}
+.common-circle-popup{
+  width: 450px;
+}
+.transparency_popup-one {
+  left: auto;
+  right: 0;
+}
+.trust_popup-one {
+  left: auto;
+}
+.success-popup-one {
+  left: -181px;
+}
+.accountability_popup-one {
+  left: 23px;
+}
+.card-h3{
+  font-size: 25px;
+}
+.card-h4{
+  font-size: 20px;
+}
+.info-box {
+  right: 20px;
+  left: auto;
+}
+.process-content-step-two,
+.process-content-step-three{
+  margin-left: auto;
+}
+}
+@media only screen and (max-width: 992px) {
+  .border-effect {
+    padding: 23px;
+}
+  .padding-top-bottom {
+    padding: 90px 0;
+  }
+
+  #collapsibleNavId {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    top: 100%;
+    width: 100%;
+    left: 0;
+    padding: 20px 0;
+  }
+
+  .secondH1, .thirdH1, .firstH1 {
+    font-size: 44px;
+  }
+
+  .h2home {
+    font-size: 33px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .phome {
+    font-size: 18px;
+  }
+
+  .banner-p {
+    font-size: 20px;
+  }
+
+  .tricolor-gradiant {
+    font-size: 18px;
+  }
+
+  .secure::after {
+    content: none;
+  }
+
+  .secure {
+    height: 100%;
+    padding-top:0%;
+  }
+
+  .firstH11, .secondH11, .thirdH11 {
+    font-size: 48px;
+  }
+
+  .upfooter {
+    padding: 80px 0;
+  }
+  .custom-font-add {
+    font-size: 20px;
+}
+.culture-title-h3 {
+  font-size: 30px;
+}
+.font-use-20 {
+  font-size: 18px;
+}
+.custom-w {
+  width: 390px;
+}
+.carrer-mini-heading{
+  font-size: 26px;
+}
+.perks img {
+  width: 55px;
+}
+.circle-arrow {
+  top: -20px;
+  right: -20px;
+}
+.become-a-partner-icon-h {
+  height: 70px;
+}
+.border-before-after::after,
+.border-before-after::before{
+  content: none;
+}
+.h2become {
+  font-size: 27px;
+}
+  .all-process-content{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .border-effect {
+    padding: 16px;
+}
+  .secondH1,
+  .thirdH1,
+  .firstH1 {
+    font-size: 38px;
+  }
+
+  .h2home {
+    font-size: 28px;
+  }
+
+  .plan-back {
+    width: 100%;
+  }
+
+  .how-much {
+    width: 100%;
+  }
+
+  .firstH11, .secondH11, .thirdH11 {
+    font-size: 42px;
+  }
+
+  .ob-with-cover {
+    height: 330px;
+  }
+  .custom-font-add {
+    padding: 0 10px;
+}
+.all-circle-icon {
+  width: 35px;
+  margin-bottom: 6px;
+}
+.circle-icon-text {
+  font-size: 15px;
+}
+.all-circle-img {
+  width: 400px;
+}
+.common-circle-popup {
+  width: 320px;
+}
+.success-popup-one {
+  left: -125px;
+}
+.accountability_popup-one {
+  left: 45px;
+}
+.content-w-custom{
+  width: 85%;
+}
+h2.small-title {
+  font-size: 21px;
+}
+.content2 {
+  font-size: 17px;
+}
+.mapp {
+  height: 63vh;
+}
+}
+@media only screen and (max-width: 575px) {
+  .btn{
+    font-size: 14px;
+  }
+  .padding-top-bottom {
+    padding: 50px 0;
+  }
+
+  .header-logo {
+    width: 75px;
+  }
+
+  .navbar-toggler {
+    padding: 1px 5px;
+  }
+
+  .gradiant_btn,
+  .get_start_btn {
+    font-size: 14px !important;
+    height: 43px !important;
+  }
+  .gradiant_btn{
+    width: auto !important;
+  }
+  .navbar-toggler-icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .phome {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .white_btn {
+    background-size: contain;
+    height: 46px !important;
+    width: 160px !important;
+  }
+  p,
+  .footer-link{
+    font-size: 14px;
+  }
+  .upfooter {
+    padding: 30px 0;
+}
+.custom-font-add {
+  font-size: 18px;
+}
+.accountability-circle-border,
+.transparency-circle-border,
+.trust-circle-border{
+  height: 250px;
+  width: 250px;
+}
+.transparency-circle-border {
+  top: -249px;
+}
+.accountability-circle-border {
+  top: -545px;
+}
+.trust-icon {
+  width: 35px;
+  top: 72px;
+}
+.transparency-icon {
+  left: 165px;
+  width: 35px;
+  top: 72px;
+}
+.success-back-img {
+  rotate: -1deg;
+  left: 135px;
+  top: -375px;
+  width: 112px;
+}
+.mission-circle {
+  left: 25px;
+  top: 40px;
+}
+.vision-circle{
+  top: 40px;
+  right: 25px;
+}
+.transparancy {
+  right: 8px !important;
+}
+.all-circle-img {
+  width:265px;
+}
+.all-circle-icon {
+  width: 26px;
+}
+.circle-icon-text {
+  font-size: 11px;
+}
+.promise-circle {
+  bottom: 25px;
+}
+.success-circle {
+  top: -21px;
+}
+.common-circle-popup {
+  width: 227px;
+  padding: 6px;
+}
+.accountability_popup-one {
+  left: 18px;
+}
+.success-popup-one {
+  left: -88px;
+}
+.culture-img-icon {
+  width: 30px;
+}
+.culture-title-h3 {
+  font-size: 25px;
+}
+.font-use-20 {
+  font-size: 17px;
+}
+.use-font-15 {
+  font-size: 14px;
+}
+.my-padding{
+  padding: 50px 10%;
+}
+.smalltext{
+  margin-left: 20px;
+  font-size: 14px;
+}
+.content {
+  font-size: 15px;
+  line-height: 24px;
+}
+.carrer-mini-heading {
+  font-size: 18px;
+}
+.perks img {
+  width: 40px;
+}
+.support-p2,
+.support-p{
+  width: 100%;
+}
+.h2become {
+  font-size: 22px;
+}
+.plan-back {
+  box-shadow: 1px 1px 10px 0px #1e2a5e;
+  border-radius: 15px;
+}
+h5{
+  font-size: 16px;
+}
+}
+@media only screen and (max-width: 470px){
+  .mapp {
+    height: 50vh;
+}
+#state-name{
+  font-size: 15px;
+}
+#market-potential{
+  font-size: 10px;
+}
+.info-box {
+  right: 0px;
+}
+}
+@media only screen and (max-width: 350px){
+.mapp {
+  height: 37vh;
+  padding: 0;
+}
+}
+@media only screen and (max-width: 400px){
+  .secondH1, .thirdH1, .firstH1 {
+    font-size: 30px;
+}
+  .my-padding{
+    padding: 50px 0;
+  }
+  .custom-w {
+    width: 100%;
+}
+.border-effect {
+  padding: 10px;
+}
+} 

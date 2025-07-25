@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Footer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    footer {
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 2;
+      min-width: 800px;
+    }
+
+    .footer-logo-group {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .footer-logo-group img:first-child {
+      height: 160px;
+    }
+
+    .footer-logo-group img:last-child {
+      height: 60px;
+    }
+
+    .vertical-divider {
+      width: 1px;
+      height: 80px;
+      background-color: white;
+    }
+
+    .footer-text {
+      font-size: 14px;
+      margin-top: 10px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .quick-links {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .quick-links b {
+      color: #6CC727;
+    }
+
+    .quick-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .quick-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-right {
+      flex: 1;
+      min-width: 200px;
+      text-align: left;
+      padding-left: 34%;
+    }
+
+    .footer-right h1 {
+      color: #6CC727;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .footer-right a {
+      display: block;
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+      margin: 4px 0;
+    }
+
+    .footer-right a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-marquee-box {
+      background-color: #1c1c1e;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 30px;
+      font-size: 13px;
+      overflow: hidden;
+    }
+
+    .footer-marquee-box marquee {
+      color: white;
+      white-space: nowrap;
+    }
+
+    .footer-bottom {
+      font-size: 11px;
+      line-height: 1.6;
+      margin-top: 30px;
+      text-align: justify;
+    }
+
+    .footer-bottom a {
+      color: #6CC727;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-left,
+      .footer-right {
+        width: 100%;
+        text-align: left;
+      }
+
+      .footer-logo-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .vertical-divider {
+        display: none;
+      }
+
+      .footer-marquee-box {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<footer>
+  <div class="footer-container">
+
+    <!-- Top Section -->
+    <div class="footer-top">
+      <!-- Left Side -->
+      <div class="footer-left">
+        <div class="footer-logo-group">
+          <img src="img/SLVR F 0.png" alt="Logo 1">
+          <div class="vertical-divider"></div>
+          <img src="img/prosperio_neon.png" alt="Logo 2">
+        </div><br>
+        <p class="footer-text">
+          INS 540, Tower A, Urbtech Trade Center, Sector 132, <br>Noida, GBN – 201304<br>
+          <a style="color: #fff; text-decoration: none;" href="mailto:care@royalmonarch.in">care@royalmonarch.in</a>  |  
+          <a style="color: #fff; text-decoration: none;" href="tel:+918287156769">+91 82871 56769</a>
+        </p>
+
+
+      </div>
+
+      <!-- Right Side -->
+      <div class="footer-right">
+        <h1>Royal Monarch</h1>
+        <a href="ourFirm.html">About Us</a>
+        <a href="howitworks.html">How it Works</a>
+        <a href="support.html">Support</a>
+        <a href="ourCulture.html">Our Culture</a>
+        <a href="ourApproach.html">Our Approach</a>
+      </div>
+    </div><br><br>
+
+    <!-- Quick Links -->
+    <div class="quick-links">
+      <b>Quick Links:</b>
+      <a href="applicant-candidate.html">Applicant and Candidate Privacy Policy</a> |
+      <a href="Copyright.html">Copyright</a> |
+      <a href="Disclaimer.html">Disclaimer</a> |
+      <a href="Terms-Conditions.html">Terms & Conditions</a> |
+      <a href="Privacy-Policy.html">Privacy Policy</a>
+    </div>
+
+    <!-- Marquee -->
+    <div class="footer-marquee-box" style="display: flex; align-items: center;">
+  <strong style="white-space: nowrap; margin-right: 10px;">
+    Beware of fake groups impersonating Royal Monarch:
+  </strong>
+  <marquee behavior="scroll" direction="left" scrollamount="4" style="flex: 1;">
+    Please be vigilant against fake apps, messages, or any communication claiming to be from us.
+    Always verify through our official channels. Report anything suspicious to care@royalmonarch.in.
+  </marquee>
+</div>
+
+
+    <!-- Legal Text -->
+    <div class="footer-bottom">
+      Royal Monarch Fintech Private Limited (RMFPL), Registered & Corporate Office of RMFPL is at INS 540, Tower A, Urbtech Trade Center, Sector 132, Noida, GBN – 201304. CIN: U66301UP2024PTC204899. NSE Authorised
+      Person Registration Number: AP3022004063. BSE Authorised Person Registration Number: AP01668101168730. In case of any grievances, please write to care@royalmonarch.in
+      <br><br>
+      RMFPL is authorised person of Mirae Asset Capital Markets Private Limited (MACM). Registered & Corporate Office of MACM: 1st Floor, Tower 4, Equinox Business Park, LBS Marg, Off BKC, Kurla (W), Mumbai - 400 070.
+      <br><br>
+      SEBI Stock Broker Registration No.: INZ000163138 – Membership in BSE - Cash Segment (Clearing Member ID: 6681), BSE Star MF Segment (Membership No: 53975), NSE - Cash, F&O and CD Segments (Member ID: 90144), MCX - (Member ID: 56980).
+      <br><br>
+      SEBI Merchant Banking Registration No.: MB/INM000012485, SEBI Research Analyst Registration No.: INH000007526, SEBI DP Registration No: IN-DP-589-2021, CDSL DP ID: 12092900.
+      <br><br>
+      Broking services, mutual fund distribution, API, Research & advice, trading platforms, MTF^, offered by Royal Monarch Fintech Private Limited (RMFPL) are from “MACM”.
+      <br><br>
+      The information provided herein is for general informational purposes only and does not constitute an offer to buy or sell any particular securities or investment products. Please consult
+      your financial advisor for personalised investment advice. The contents herein shall not be considered as an invitation or persuasion to trade or invest. MACM and affiliates RMFPL accept
+      no liabilities for any loss or damage of any kind arising out of any actions taken in reliance thereon.
+      <br><br>
+      RMFPL also acts in the capacity of distributor for Products such as AIF, PMS, OFS, Mutual Funds, IPOs and/or NCD etc. All disputes with respect to the distribution activity, would not have
+      access to Exchange investor redressal forum or Arbitration mechanism. RMFPL also acts in
+      the capacity of distributor under AMFI Registration Number - 188742 and in capacity of a Corporate Agent; registered with IRDA having License number: CA0131. Mutual Fund Investments
+      are subject to market risks. Please read all scheme related documents carefully before investing. Investment in the securities involves risks. The user is required to undergo risk profiling
+      before investing. Guided view is indicative in nature and is based on the information provided by the user voluntarily. Past performance is not necessarily a guide to future performance.
+      <br><br>
+      Royal Monarch Fintech Private Limited (RMFPL) acts in the capacity of distributor for Products such as OFS, Unlisted, Structured Products, Alternate Investments (AIFs), Portfolio
+      Management Services (PMS), ETF, InvITs, Insurance, Mutual Funds, Fixed Income - Bonds, RBI Bonds and NCD, 54EC etc. All disputes with respect to the distribution activity, would not have
+      access to Exchange investor redressal forum or Arbitration mechanism.
+      <br><br>
+      ^Margin Trading Facility is offered subject to the provisions of SEBI Circular CIR/MRD/DP/54/2017 dated June 13, 2017 and the terms and conditions mentioned in rights and obligations
+      issued by Mirae Asset Capital Markets (India) Private Limited (MACM). Investment in securities is subject to market and other risks, and there is no assurance or guarantee that the objectives of any of the product(s) offered will be achieved. Royal Monarch is not guaranteeing any returns on the products.
+      <br><br>
+      If you encounter anything suspicious, please report it immediately via email to <a style="color: #fff; text-decoration: none;" href="mailto:care@royalmonarch.in">care@royalmonarch.in</a> Stay safe and protect your information.<br>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

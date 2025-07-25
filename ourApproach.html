@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Monarach</title>
+    <!-- Favicon in .svg format -->
+    <link rel="icon" href="./img/svg/ICON/GLD FEVICON.svg" type="image/svg+xml">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+        .common-circle-popup {
+            display: none;
+            color: black;
+        }
+        
+.firstH1{
+    color: #CDCDCD;
+}
+.secondH1,
+.thirdH1 {
+  font-weight: 700;
+  color: #aaa;
+}
+
+.tricolorgradient {
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #a200ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.green-dot {
+  color: #6CC727;
+  background: none;
+  -webkit-text-fill-color: #6CC727;
+}
+
+
+.space {
+  display: inline-block;
+  width: 12px; /* space between words */
+}
+    </style>
+
+<body>
+    <div id="header-container"></div>
+    <script>
+  // Load header
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-container").innerHTML = data;
+    });
+</script>
+    <!-- ===========
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            </ul>
+            
+                <div class="d-flex ms-5 me-5">
+                    <button type="button" class="btn get_start_btn btn-lg">
+                        <a href="#">
+                            <span class="elementor-button-text text-white">Get
+                                Started</span>
+                        </a>
+                    </button>
+                </div>
+        </div>
+        </div>
+    </nav> -->
+    <!-- content  -->
+    <div class="mt-5 pt-5 padding-top-bottom pb-sm-0 w-100 mx-auto">
+        <div 
+            class="container d-flex flex-sm-row flex-column align-items-center my-md-5 mt-5 mb-sm-4 mb-2 pt-4 justify-content-center fw-bold title-line">
+            <div class="firstH1 fw-bold">Mission.<span class="space">&nbsp;</span></div>
+            <div class="secondH1 fw-bold">Vision.<span class="space">&nbsp;</span></div>
+            <div class="thirdH1 fw-bold tricolorgradient">
+            Promise<span class="green-dot">.</span>
+        </div>
+    </div>
+    
+    <div class="container container-fluid padding-top-bottom pb-0">
+
+        <div class="table-responsive text-center mx-3 w-100 mx-auto">
+            <div class="d-flex justify-content-center mx-auto" style="width: max-content;">
+                <a class="text-white w-auto px-md-3 custom-font-add d-inlin-block firmlink"style="text-decoration: none;" href="ourFirm.html">Our
+                    Firm</a>
+                <a class="text-white w-auto px-md-3 custom-font-add d-inlin-block firmlink"style="text-decoration: none;" href="ourCulture.html">Our
+                    Culture</a>
+                <a class="text-white w-auto px-md-3 custom-font-add d-inlin-block activefirm" style="text-decoration: none;"  href="ourApproach.html">
+                    Our Approach</a>
+                <!--<a class="text-white w-auto px-md-3 custom-font-add d-inlin-block firmlink" href="ourTeam.html">Our
+                    Team</a>-->
+            </div>
+        </div>
+
+        <div class="padding-top-bottom  px-sm-0 px-3" style="width: 90%; margin: auto;">
+            <p class="text-white phome mt-3">When we talk about the ways that wealth and financial stability can define
+                the
+                individual, it has little to do with a balance sheet and more to do with a balanced life.
+                True wealth is all, that money can’t buy, and death can’t take away. It takes far more
+                than financial planning. It requires a comprehensive approach with as much
+                imagination as innovation – creativity paired with careful calculation.
+            </p>
+            <p class="text-white phome mt-3 ">
+                As your trusted advisor, we are wholly dedicated to helping you reach a higher
+                purpose for your wealth and design a lasting legacy for your family. We leverage
+                deep industry knowledge, a vast network of specialized services, proven investment
+                strategies, and a passion for serving you.
+            </p>
+        </div>
+
+        <div class="padding-top-bottom pt-0 px-sm-0 px-3">
+            <h4 class="text-center fs-2 pb-md-5 fw-light" style="margin-top: -10%;"> <span class="spn1">"Live your life by design, not by default
+                    ."</span></h4>
+            <h2 class="text-white fs-2 text-center my-sm-5 my-4">The Values That Inspire Us</h2>
+            <p class="text-white phome" style="width: 90%; margin: auto;">
+                Part of what makes our firm unique is our dedication to delivering trust, transparency,
+                and accountability. These three words serve as a source of inspiration for everyone
+                on our staff – and they drive what we seek to accomplish for our clients daily.
+            </p>
+        </div>
+
+        <div class="pt-0">
+            <!-- <div class="elementor-element ">
+            <div class="trust-circle-border">
+                <img class="img-fluid trust-icon" onmouseenter="trust_popup()" src="./IMG/svg/ICON/trust.svg"
+                    alt="">
+                <h5 class="text-white trust-text" onmouseenter="trust_popup()">Trust</h5>
+                <div id="trust_popup" class="trust_popup">
+                    <p>The current situation inspired our entrepreneurial vision of developing innovative
+                        solutions to address the demand and supply imbalance of quality financial planning.
+                    </p>
+                </div>
+            </div>
+            <div class="transparency-circle-border">
+                <img class="img-fluid transparency-icon" onmouseenter="transparency_popup()"
+                    src="./IMG/svg/ICON/transparency.svg" alt="">
+                <h5 class="text-white transparency-text" onmouseenter="transparency_popup()">Transparency</h5>
+                <div id="transparency_popup" class="transparency_popup">
+                    <p>All the creators of Royal Monarch surprisingly do not use our competition as a
+                        benchmark. We follow a different strategic logic called value innovation, which is the
+                        foundation of the Royal Monarch.</p>
+                </div>
+            </div>
+            <img class="img-fluid success-back-img" src="./IMG/svg/exclude6785-e3j.svg" alt="">
+            <div class="accountability-circle-border">
+                <img class="img-fluid success-icon" src="./IMG/svg/ICON/Success.svg" alt="">
+                <h5 class="text-white success-text" onmouseenter="success_popup()">Success</h5>
+
+                <img class="img-fluid accountability-icon" onmouseenter="accountability_popup()"
+                    src="./IMG/svg/ICON/accountability.svg" alt="">
+                <h5 class="text-white accountability-text" onmouseenter="accountability_popup()">Accountability</h5>
+                <div id="accountability_popup" class="accountability_popup">
+                    <p>All the creators of Royal Monarch surprisingly do not use our competition as a
+                        benchmark. We follow a different strategic logic called value innovation, which is the
+                        foundation of the Royal Monarch.</p>
+                </div>
+                <div id="success_popup" class="success-popup">
+                    <p>All the creators of Royal Monarch surprisingly do not use our competition as a
+                        benchmark. We follow a different strategic logic called value innovation, which is the
+                        foundation of the Royal Monarch.</p>
+                </div>
+            </div>
+
+        </div> -->
+
+            <div class="pb-sm-5 pb-4">
+                <div class="text-center position-relative mx-auto" style="width: fit-content;">
+                    <img src="img/all-circle.png" alt="" class="all-circle-img mx-auto">
+                    <div class="mission-circle position-absolute">
+                        <img class="img-fluid all-circle-icon" src="./img/svg/ICON/trust.svg" alt="">
+                        <h5 class="text-white circle-icon-text mb-0">Trust</h5>
+                        <div class="mission-inner-popup position-relative">
+                            <div id="trust_popup-one" class="trust_popup-one common-circle-popup position-absolute" style="text-align: left;">
+                                <p>You can be confident that we will make decisions that are in your best interest – and based on your financial 
+                                    goals and objectives. When it comes to managing your hard-earned wealth, let your trusted advisor help you every step of the way.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vision-circle transparancy position-absolute">
+                        <img class="img-fluid all-circle-icon" src="./img/svg/ICON/transparency.svg" alt="">
+                        <h5 class="text-white circle-icon-text mb-0">Transparency</h5>
+                        <div class="vision-inner-popup position-relative">
+                            <div id="transparency_popup" -one
+                                class="transparency_popup-one common-circle-popup position-absolute" style="text-align: left;">
+                                <p>It’s important for us to communicate in a clear, straightforward way, giving our clients insight into why we make certain decisions 
+                                    and what the impact will be. Whether it’s disclosing all of the fees associated with your account, providing detailed trade notifications, 
+                                    or taking the time to discuss major economic events with you, we proactively educate clients through open and honest communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promise-circle position-absolute">
+                        <img class="img-fluid all-circle-icon" src="./img/svg/ICON/accountability.svg" alt="">
+                        <h5 class="text-white circle-icon-text mb-0">Accountability</h5>
+                        <div class="promise-inner-popup position-relative">
+                            <div id="accountability_popup-one"
+                                class="accountability_popup-one common-circle-popup position-absolute" style="text-align: left;">
+                                <p>When we set out to accomplish something, we do it – with integrity and teamwork. We hold ourselves accountable no matter what, which gives 
+                                    our clients financial confidence knowing the team that manages their wealth follows through on their word. And, in turn, when we create your 
+                                    financial plan, we will hold you accountable, too. That mutual sense of responsibility is one of the most important ways we help you pursue your goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="success-circle position-absolute">
+                        <img class="img-fluid all-circle-icon" src="./img/svg/ICON/Success.svg" alt="">
+                        <h5 class="text-white circle-icon-text mb-0">Success</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upfooter px-sm-0 px-3">
+            <h1 class="text-white text-center">It's not Luck!! </h1>
+            <h2 class="text-white text-center">But, the right decision at the right time.</h2><br>  
+            <h4 class="text-center mt-3"><span class="spn1">Get ready to make a guilt free decision</span><span class="green-dot">.</span></h4>
+            <div class="me-xl-5 me-sm-3 me-2 mt-4 d-flex justify-content-center" style="margin-top: -3%;">
+                    <button type="button" class="btn get_start_btn btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+                        <a href="signup.html">
+                            <span class="elementor-button-text text-white">Get
+                                Started</span>
+                        </a>
+                    </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+     <div id="footer-container"></div>
+    <script>
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+    });
+    </script>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end border-bottom-0">
+              <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+              <button type="button" class="close bg-transparent border-0 text-white" data-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="" id="Fist_Step">
+                    <div class="position-relative">
+                        <div class="like-progress w-100 rounded-3"></div>
+                        <div class="slide-bg bg-white h-100 rounded-3 position-absolute"></div>
+                    </div>
+                    <p class="fw-medium text-white mb-0 pt-4 mt-2">Let’s customize it per your personality and goals</p>
+                    <form class="needs-validation">
+                        <div class="row my-4 pb-3">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent modal-input rounded-0 ps-0" id="exampleInputFName1" aria-describedby="FNameHelp" placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent modal-input rounded-0 ps-0" id="exampleInputLName1" aria-describedby="FNameHelp" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-check-input">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label text-white" for="exampleRadios1">
+                                Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label text-white" for="exampleRadios2">
+                                Female
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label text-white" for="exampleRadios3">
+                                Other
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button type="submit" class="bg-transparent border-0 first-next">
+                                <div class="white_btn elementor-button-text text-white"  style="height: 38px !important;
+                                width: 83px !important; background-position: right; border-radius: 9px 0 0 9px;">Next</div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="" id="Second_Step">
+                    <div class="position-relative">
+                        <div class="like-progress w-100 rounded-3"></div>
+                        <div class="slide-bg slide-second-bg bg-white h-100 rounded-3 position-absolute"></div>
+                    </div>
+                    <p class="fw-medium text-white mb-0 pt-4 mt-2">Where are you in your in your life cycle?</p>
+                    <form class="needs-validation">
+                        <div class="row my-4 pb-3">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control bg-transparent modal-input rounded-0 ps-0" id="exampleInputAge1" aria-describedby="FNameHelp" placeholder="Age" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="bg-transparent border-0">
+                                <span class="white_btn elementor-button-text text-white first-previous"  style="height: 38px !important;
+                                width: 134px !important;  background-position: right; border-radius: 9px 0 0 9px;">Previous</span>
+                            </button>
+                            <button type="submit" class="bg-transparent border-0 second-next">
+                                <span class="white_btn elementor-button-text text-white"  style="height: 38px !important;
+                                width: 83px !important; background-position: right; border-radius: 9px 0 0 9px;">Next</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="" id="Third_Step">
+                    <div class="position-relative">
+                        <div class="like-progress w-100 rounded-3"></div>
+                        <div class="slide-bg slide-three-bg bg-white h-100 rounded-3 position-absolute"></div>
+                    </div>
+                    <p class="fw-medium text-white mb-0 pt-4 mt-2">Tell us what you got?</p>
+                    <form class="needs-validation">
+                        <div class="row my-4 pb-3">
+                            <div class="col-sm-12">
+                                <div class="form-group mb-2">
+                                    <input type="text" class="form-control bg-transparent modal-input rounded-0 ps-0" id="exampleInputlumpsum1" aria-describedby="sumHelp" placeholder="Lumpsum" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group mb-2">
+                                    <input type="text" class="form-control bg-transparent modal-input rounded-0 ps-0" id="exampleInputsip1" aria-describedby="sipHelp" placeholder="SIP" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group mb-2">
+                                    <input type="text" class="form-control bg-transparent modal-input rounded-0 ps-0" id="exampleInputLsip1" aria-describedby="LsipHelp" placeholder="Lumpsum+SIP" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="bg-transparent border-0">
+                                <span class="white_btn elementor-button-text text-white second-previous"  style="height: 38px !important;
+                                width: 134px !important;  background-position: right; border-radius: 9px 0 0 9px;">Previous</span>
+                            </button>
+                            <button type="submit" class="bg-transparent border-0 third-next">
+                                <span class="white_btn elementor-button-text text-white"  style="height: 38px !important;
+                                width: 83px !important; background-position: right; border-radius: 9px 0 0 9px;">Next</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="" id="Fourth_Step">
+                    <div class="position-relative">
+                        <div class="like-progress w-100 rounded-3"></div>
+                        <div class="slide-bg slide-four-bg bg-white h-100 rounded-3 position-absolute"></div>
+                    </div>
+                    <p class="fw-medium text-white mb-0 pt-4 mt-2">How long would you stay Invested?</p>
+                    <form class="needs-validation">
+                        <div class="row my-4 pb-3">
+                            <div class="col-sm-12">
+                                <div class="form-group mb-2">
+                                    <select class="form-select shadow-none bg-transparent border-bottom text-white rounded-0" id="select-year" aria-label="Default select example">
+                                        <option selected>1 Year</option>
+                                        <option value="1">5 Year</option>
+                                        <option value="2">10 Year</option>
+                                        <option value="3">20 Years – Magic begins here</option>
+                                        <option value="4">30 Years – Feel the power of compounding (Numbers don’t lie)</option>
+                                        <option value="5">I have a number in mind _____ Years</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="bg-transparent border-0">
+                                <span class="white_btn elementor-button-text text-white third-previous"  style="height: 38px !important;
+                                width: 134px !important;  background-position: right; border-radius: 9px 0 0 9px;">Previous</span>
+                            </button>
+                            <button type="submit" class="bg-transparent border-0 fourth-next">
+                                <span class="white_btn elementor-button-text text-white"  style="height: 38px !important;
+                                width: 83px !important; background-position: right; border-radius: 9px 0 0 9px;">Next</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="" id="Fifth_Step">
+                    <div class="position-relative">
+                        <div class="like-progress w-100 rounded-3"></div>
+                        <div class="slide-bg slide-five-bg bg-white h-100 rounded-3 position-absolute"></div>
+                    </div>
+                    <p class="fw-medium text-white mb-0 pt-4 mt-2">Who is counting on you? Financially!</p>
+                    <form class="needs-validation">
+                        <div class="row my-4 pb-3">
+                            <div class="col-sm-12">
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault" checked>
+                                        <label class="form-check-label text-white" for="flexCheckDefault">
+                                            Spouse
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label text-white" for="flexCheckChecked">
+                                            Kid(s)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label text-white" for="flexCheckChecked">
+                                            Parents
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label text-white" for="flexCheckChecked">
+                                            Extended Family
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label text-white" for="flexCheckChecked">
+                                            No one, yet!
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="bg-transparent border-0">
+                                <span class="white_btn elementor-button-text text-white fourth-previous"  style="height: 38px !important;
+                                width: 134px !important;  background-position: right; border-radius: 9px 0 0 9px;">Previous</span>
+                            </button>
+                            <button type="submit" class="bg-transparent border-0 fifth-next">
+                                <span class="white_btn elementor-button-text text-white"  style="height: 38px !important;
+                                width: 83px !important; background-position: right; border-radius: 9px 0 0 9px;">Next</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="" id="Six_Step">
+                    <div class="position-relative">
+                        <div class="like-progress w-100 rounded-3"></div>
+                        <div class="slide-bg slide-six-bg bg-white h-100 rounded-3 position-absolute"></div>
+                    </div>
+                    <p class="fw-medium text-white mb-0 pt-4 mt-2">How long would you stay Invested?</p>
+                    <form class="needs-validation">
+                        <div class="row my-4 pb-3">
+                            <div class="col-sm-12">
+                                <div class="form-group mb-2">
+                                    <select class="form-select shadow-none bg-transparent border-bottom text-white rounded-0" id="select-price" aria-label="Default select example">
+                                        <option selected>Up to Rs. 3,00,000</option>
+                                        <option value="1">Rs. 300,000 to Rs. 600,000</option>
+                                        <option value="2">Rs. 600,000 to Rs. 900,000</option>
+                                        <option value="3">Rs. 12,00,000 to Rs. 15,00,000</option>
+                                        <option value="4">Flying over Rs. 15,00,000</option>
+                                        <option value="5">This helps us pick the best investment option for you. </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="bg-transparent border-0">
+                                <span class="white_btn elementor-button-text text-white five-previous"  style="height: 38px !important;
+                                width: 134px !important;  background-position: right; border-radius: 9px 0 0 9px;">Previous</span>
+                            </button>
+                            <button type="submit" class="bg-transparent border-0 six-next">
+                                <span class="white_btn elementor-button-text text-white"  style="height: 38px !important;
+                                width: 83px !important; background-position: right; border-radius: 9px 0 0 9px;">Next</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="" id="Seven_Step">
+                    <div class="position-relative">
+                        <div class="like-progress w-100 rounded-3"></div>
+                        <div class="slide-bg slide-seven-bg bg-white h-100 rounded-3 position-absolute"></div>
+                    </div>
+                    <p class="fw-medium text-white mb-0 pt-4 mt-2">How long would you stay Invested?</p>
+                    <form class="needs-validation">
+                        <div class="row my-4 pb-3">
+                            <div class="col-sm-12">
+                                <div class="form-group mb-2">
+                                    <select class="form-select shadow-none bg-transparent border-bottom text-white rounded-0" id="select-type" aria-label="Default select example">
+                                        <option selected>Emergency Fund</option>
+                                        <option value="1">Paying off Debt</option>
+                                        <option value="2">Family Support</option>
+                                        <option value="3">Buying a Home</option>
+                                        <option value="4">Savings for Retirement</option>
+                                        <option value="5">College or Private School</option>
+                                        <option value="6">New Car</option>
+                                        <option value="7">Vacation</option>
+                                        <option value="8">Charity</option>
+                                        <option value="9">Becoming an entrepreneur</option>
+                                        <option value="10">Something Out of the Box</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="bg-transparent border-0">
+                                <span class="white_btn elementor-button-text text-white six-previous"  style="height: 38px !important;
+                                width: 134px !important;  background-position: right; border-radius: 9px 0 0 9px;">Previous</span>
+                            </button>
+                            <button type="submit" class="bg-transparent border-0 seven-next">
+                                <span class="white_btn elementor-button-text text-white"  style="height: 38px !important;
+                                width: 83px !important; background-position: right; border-radius: 9px 0 0 9px;">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+    
+
+    <script>
+  // Select all images inside those circles
+  document.querySelectorAll('.mission-circle img, .vision-circle img, .promise-circle img, .success-circle img').forEach(img => {
+    img.addEventListener('click', function(e) {
+      e.stopPropagation();
+
+      // Find the related popup: closest circle > .common-circle-popup inside it
+      const circle = this.closest('div.position-absolute'); // e.g. mission-circle div
+      if (!circle) return;
+
+      const popup = circle.querySelector('.common-circle-popup');
+      if (!popup) return;
+
+      if (popup.style.display === 'block') {
+        popup.style.display = 'none';
+      } else {
+        // Hide other popups first
+        document.querySelectorAll('.common-circle-popup').forEach(p => p.style.display = 'none');
+
+        // Show this popup
+        popup.style.display = 'block';
+      }
+    });
+  });
+
+  // Hide popups when clicking outside images
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.common-circle-popup').forEach(popup => {
+      popup.style.display = 'none';
+    });
+  });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added for responsiveness -->
+  <title>Investment Line Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+     
+    }
+
+    h2 {
+      text-align: center;
+      margin: 20px 10px;
+      color: #fff;
+      font-weight: normal;
+      font-size: 1.4rem;
+    }
+
+    .chart-container {
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: 
+    linear-gradient(black, black) padding-box, /* Inner black background */
+    linear-gradient(to right, #01BCE6, #3461fd, #bd0efa) border-box; /* Border gradient */
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .chart-container {
+        padding: 15px;
+        border-radius: 15px;
+      }
+
+      canvas {
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <div class="chart-container">
+    <canvas id="investmentChart"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('investmentChart').getContext('2d');
+
+    const data = {
+      labels: Array.from({length: 30}, (_, i) => i + 1),
+      datasets: [
+        {
+          label: 'Total Investment',
+          data: [
+            5180000, 5378000, 5595800, 5835380, 6098918,
+            6388810, 6707691, 7058460, 7444306, 7868736,
+            8335610, 8849171, 9414088, 10035497, 10719047,
+            11470951, 12298047, 13207851, 14208636, 15309500,
+            16520450, 17852495, 19317744, 20929519, 22702471,
+            24652718, 26797990, 29157788, 31753567, 34608924
+          ],
+          borderColor: '#00c6ff',
+          backgroundColor: 'transparent',
+          tension: 0.3,
+          pointRadius: 3,
+          pointBackgroundColor: '#00c6ff'
+        },
+        {
+          label: 'Investment Value',
+          data: [
+            6080000, 7372400, 8917232, 10761914, 12962596,
+            15585755, 18710072, 22428654, 26851658, 32109387,
+            38355951, 45773583, 54577745, 65023148, 77410864,
+            92096724, 109501229, 130121255, 154543866, 183462626,
+            217696849, 258214326, 306158155, 362878397, 429969460,
+            509314210, 603136040, 714060326, 845186963, 1000175974
+          ],
+          borderColor: '#a200ff',
+          backgroundColor: 'transparent',
+          tension: 0.3,
+          pointRadius: 3,
+          pointBackgroundColor: '#a200ff'
+        }
+      ]
+    };
+
+    new Chart(ctx, {
+      type: 'line',
+      data: data,
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: '#aaa',
+              font: {
+                weight: 'normal'
+              }
+            }
+          },
+          title: {
+            display: true,
+            text: 'Total Investment vs Investment Value (in ₹ Cr)',
+            color: '#aaa',
+            font: {
+              weight: 'normal',
+              size: 16
+            }
+          },
+          tooltip: {
+            backgroundColor: '#333',
+            titleColor: '#aaa',
+            bodyColor: '#aaa',
+            callbacks: {
+              label: function(context) {
+                const crValue = (context.raw / 10000000).toFixed(2);
+                return context.dataset.label + ': ₹' + crValue + ' Cr';
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            ticks: {
+              color: '#aaa',
+              callback: function(value) {
+                return '₹' + (value / 10000000).toFixed(1) + ' Cr';
+              }
+            },
+            title: {
+              display: true,
+              text: 'Amount (₹ in Crores)',
+              color: '#aaa'
+            },
+            grid: {
+              color: 'rgba(255,255,255,0.1)'
+            }
+          },
+          x: {
+            ticks: {
+              color: '#aaa'
+            },
+            title: {
+              display: true,
+              text: 'Year',
+              color: '#aaa'
+            },
+            grid: {
+              color: 'rgba(255,255,255,0.1)'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
